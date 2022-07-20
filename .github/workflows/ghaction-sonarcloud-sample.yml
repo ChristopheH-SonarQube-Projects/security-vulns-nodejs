@@ -31,4 +31,4 @@ jobs:
           # Additional arguments to the sonarcloud scanner
           args: >
             -Dsonar.projectKey=securityvuln
-            -Dsonar.organization=myorg          
+            -Dsonar.organization=myorgforatest          
