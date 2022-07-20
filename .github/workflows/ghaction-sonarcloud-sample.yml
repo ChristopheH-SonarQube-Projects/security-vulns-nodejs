@@ -31,4 +31,5 @@ jobs:
           # Additional arguments to the sonarcloud scanner
           args: >
             -Dsonar.projectKey=securityvulndeux
-            -Dsonar.organization=myorgforatest          
+            -Dsonar.organization=myorgforatest
+            -Dsonar.organizationName=MyOrgNameForTest
