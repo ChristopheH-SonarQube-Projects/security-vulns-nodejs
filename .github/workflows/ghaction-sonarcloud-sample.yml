@@ -31,5 +31,4 @@ jobs:
           # Additional arguments to the sonarcloud scanner
           args: >
             -Dsonar.projectKey=security_vuln
-            # Unique organisation key of your project. You can find it in SonarCloud > Information (bottom-left menu)
             -Dsonar.organization=my_org          
