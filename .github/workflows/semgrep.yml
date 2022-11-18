@@ -20,3 +20,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: semgrep --config auto --output scan_results.sarif --sarif
+  
+    - name: Archive report
+      uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3.1.0
+      if: always()
+      with:
+        name: github-report
+        path: /home/runner/work/security-vulns-nodejs/results/*.sarif
+        retention-days: 3
