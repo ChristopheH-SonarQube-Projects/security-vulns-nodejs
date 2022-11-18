@@ -26,5 +26,5 @@ jobs:
       if: always()
       with:
         name: github-report
-        path: /home/runner/work/security-vulns-nodejs/results/*.sarif
+        path: /*.sarif
         retention-days: 3
